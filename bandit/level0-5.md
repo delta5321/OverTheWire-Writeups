@@ -14,7 +14,6 @@
 ls              # 파일 확인
 cat readme      # 내용 출력
 
-
 ---
 # OverTheWire: Bandit Level 1 → 2
 
@@ -26,8 +25,9 @@ cat readme      # 내용 출력
 - 리눅스에서 `-`는 종종 '표준 입력(Standard Input)'을 의미함.
 - 따라서 경로를 명시적으로 지정해주어야 파일로 인식함.
 
-ls -l
-cat ./-    # 현재 디렉터리(./)를 명시함
+### 3. 명령어
+- ls -l
+- cat ./-    # 현재 디렉터리(./)를 명시함
 
 ---
 # OverTheWire: Bandit Level 2 → 3
@@ -39,7 +39,8 @@ cat ./-    # 현재 디렉터리(./)를 명시함
 ## 2. 해결 과정
 - 따옴표(Quoting): 파일명 전체를 ' ' 또는 " "로 감싸기.
 
-cat "spaces in this filename"
+### 3. 명령어
+- cat "spaces in this filename"
 
 ---
 # OverTheWire: Bandit Level 3 → 4
@@ -52,6 +53,7 @@ cat "spaces in this filename"
 - 리눅스 시스템에서 파일명이 .(점)으로 시작하는 파일은 기본적으로 숨김 처리됨 (예: .bashrc, .profile).
 - ls 명령어에 -a (all) 옵션을 추가하여 숨김 속성의 파일까지 모두 리스팅함.
 
+### 3. 명령어
 cd inhere
 ls -a           # .hidden 파일 발견
 cat .hidden
@@ -67,7 +69,7 @@ cat .hidden
 - 모든 파일을 일일이 열어보는 것은 비효율적이며, 바이너리 파일을 캣(cat)할 경우 터미널이 깨질 위험이 있음.
 - 파일의 실제 데이터 형식(MIME type 등)을 판별해주는 file 명령어를 사용하여 텍스트 파일(ASCII text)을 선별함.
 
-cd inhere
+### 3. 명령어
 cd inhere
 file ./* # 현재 디렉터리 내 모든 파일의 타입 분석
 cat ./-file07
