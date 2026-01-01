@@ -11,8 +11,9 @@
 ### 2. 해결 과정
 - 파일의 내용을 출력하는 `cat` 명령어를 사용함.
 
-ls              # 파일 확인
-cat readme      # 내용 출력
+### 3. 명령어
+- ls              # 파일 확인
+- cat readme      # 내용 출력
 
 ---
 # OverTheWire: Bandit Level 1 → 2
@@ -70,6 +71,6 @@ cat .hidden
 - 파일의 실제 데이터 형식(MIME type 등)을 판별해주는 file 명령어를 사용하여 텍스트 파일(ASCII text)을 선별함.
 
 ### 3. 명령어
-cd inhere
-file ./* # 현재 디렉터리 내 모든 파일의 타입 분석
-cat ./-file07
+- cd inhere
+- file ./* # 현재 디렉터리 내 모든 파일의 타입 분석
+- cat ./-file07
